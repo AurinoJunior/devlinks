@@ -1,0 +1,76 @@
+{
+  "dev_links": [
+    {
+      "ci_cd": [
+        {
+          "id": "97290da9-6d83-4df5-bbfe-30438cdc3d42",
+          "name": "Vercel",
+          "description": "Um provedor em cloud para projetos frontend, funciona muito bem com next.js e react.js",
+          "link": "https://vercel.com/"
+        },
+        {
+          "id": "3b9ecd0e-a9dc-42a1-87ac-4a1cac348fb5",
+          "name": "Railway APP",
+          "description": "Railway é um provedor cloud focado em aplicações web, banco de dados e web services",
+          "link": "https://railway.app/"
+        },
+        {
+          "id": "6b584e89-0b1c-4cba-a7fd-e2e397558e0e",
+          "name": "AWS",
+          "description": "Amazon web services, maior provedor de cloud do mundo, com diversos tipos de soluções",
+          "link": "https://aws.amazon.com/pt/"
+        }
+      ]
+    },
+    {
+      "performance": [
+        {
+          "id": "15f2a72e-b32b-4831-88cc-5058d2bcda6f",
+          "name": "BUNDLEPHOBIA",
+          "description": "Esse site ajuda a ver o tamanho de pacotes do node.",
+          "link": "https://bundlephobia.com/"
+        },
+        {
+          "id": "897fbb4c-31c6-4a22-bb04-23bf51d97a1f",
+          "name": "Mozilla Observatory",
+          "description": "Mozilla Observatory ajuda a descobrir falha de segurança no site com base nos headers e alguns possiveis ataques",
+          "link": "https://observatory.mozilla.org/"
+        },
+        {
+          "id": "aa6a9df6-d427-4873-83eb-6e7393b028c2",
+          "name": "Page speed insights",
+          "description": "Um dos principais site para medir performance ajuda muito a entender e melhorar métricas de web core vitals",
+          "link": "https://pagespeed.web.dev/"
+        },
+        {
+          "id": "57e5e4e1-faf6-45a9-8d15-647b04b724f5",
+          "name": "Web page test",
+          "description": "Web page test é muito legal para verificar latencia e notas do site em geral, possui mais configurações de como as métricas deverão ser colhidas",
+          "link": "https://www.webpagetest.org/"
+        }
+      ]
+    },
+    {
+      "lib_frameworks": [
+        {
+          "id": "9bfc6167-d3c9-4c24-95b2-f35748e6d134",
+          "name": "Shadcn UI",
+          "description": "Uma biblioteca para construção de componentes baseada no radix e tailwind",
+          "link": "https://ui.shadcn.com/"
+        },
+        {
+          "id": "f73148c2-11ce-4231-b238-ac29054b869e",
+          "name": "Radix UI",
+          "description": "Uma biblioteca para construção de componentes, com foco em acessibilidade",
+          "link": "https://www.radix-ui.com/"
+        },
+        {
+          "id": "e4c09873-b1f2-4475-9d79-9a8dcce5cc17",
+          "name": "Tailwind CSS",
+          "description": "Uma biblioteca para construção de interfaces",
+          "link": "https://tailwindcss.com/"
+        }
+      ]
+    }
+  ]
+}

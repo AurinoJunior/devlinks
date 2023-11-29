@@ -1,0 +1,22 @@
+{
+  "algorithms": [
+    {
+      "id": "3802a67e-4b79-4d26-9c45-8f6a531a8e1e",
+      "name": "HackerRank",
+      "description": "O HackerRank é uma plataforma online que oferece desafios de programação, competições de codificação e oportunidades de prática para desenvolvedores e profissionais de tecnologia",
+      "link": "https://www.hackerrank.com/"
+    },
+    {
+      "id": "96217d0b-47bf-4f30-b3cd-731536488f72",
+      "name": "CodeWars",
+      "description": "CodeWars é uma plataforma online que desafia desenvolvedores com problemas de programação em diversas linguagens.",
+      "link": "https://www.codewars.com/"
+    },
+    {
+      "id": "81e1b2c2-8a0b-4aab-b6f6-2672d614f39d",
+      "name": "Exercism",
+      "description": "Exercism é uma plataforma que oferece desafios de programação em várias linguagens, focada no aprimoramento das habilidades dos desenvolvedores por meio de mentorias e revisões de código.",
+      "link": "https://exercism.org/"
+    }
+  ]
+}
