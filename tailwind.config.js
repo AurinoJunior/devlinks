@@ -16,7 +16,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      header: ['Silkscreen'],
+      header: ['Rubik Bubbles'],
       sans: ['Inter', 'sans-serif'],
     },
     extend: {
