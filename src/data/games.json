@@ -3,18 +3,21 @@
     {
       "id": "1d7bc2a3-f7fc-4a11-b644-161158532041",
       "name": "Termo",
+      "image": "/images/termo.png",
       "description": "Descubra a palavra certa em 6 tentativas. Depois de cada tentativa, as peças mostram o quão perto você está da solução",
       "link": "https://term.ooo/"
     },
     {
       "id": "2ef6f001-aa5c-463a-8919-4d52004e7217",
       "name": "Codenames",
+      "image": "/images/codenames.png",
       "description": "Codenames é um jogo de tabuleiro de dedução de palavras",
       "link": "https://codenames.game/"
     },
     {
       "id": "36eb9918-f9ae-440a-8d6e-f5a9511f00e9",
       "name": "Contexto",
+      "image": "/images/contexto.png",
       "description": "Descubra a palavra secreta. Você pode tentar quantas vezes precisar.",
       "link": "https://contexto.me/"
     }
