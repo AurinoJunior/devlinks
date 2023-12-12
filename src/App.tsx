@@ -27,19 +27,19 @@ export function App() {
       <Header />
       <SearchBar onChangeInput={setQuery} value={query} />
 
-      <section className="w-full text-center mt-16">
+      <section className="w-full text-center mt-16 px-12">
         <h1 className="font-bold text-3xl">{currentCategory.title}</h1>
         <h2 className="mt-4 text-muted-foreground">
           {currentCategory.subtitle}
         </h2>
       </section>
 
-      <main className="w-full px-40 my-16">
+      <main className="w-full px-12 md:px-40 my-16">
         <MenuTab data={allData} onChangeTab={setCurrentCategory} />
 
-        <div className="mt-8 flex gap-4 flex-wrap justify-center">
+        <div className="mt-8 flex gap-8 flex-wrap justify-center">
           {filteredLinks.map((item) => (
-            <Card className="flex flex-col w-72" key={item.id}>
+            <Card className="flex flex-col md:w-72" key={item.id}>
               <div className="w-full h-60">
                 <img
                   className="object-cover w-full h-full rounded-t-md"

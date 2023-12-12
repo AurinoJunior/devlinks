@@ -3,17 +3,17 @@ import { Button } from '../ui/button'
 
 export function Header() {
   return (
-    <header className="font-bold text-3xl text-center py-8 relative">
-      <h1 className="flex-1 text-primary font-header">
+    <header className="flex justify-between items-center font-bold text-2xl text-center p-4 md:block md:text-3xl md:py-8 md:relative">
+      <h1 className="text-primary font-header">
         DEV <span className="text-cyan-500">LINKS</span>
       </h1>
 
-      <Button className="font-bold" asChild>
+      <Button className="font-bold" asChild size="sm">
         <a
           target="_blank"
           href="https://github.com/aurinojunior/devlinks"
           rel="noreferrer"
-          className="absolute top-8 right-8"
+          className="md:absolute md:top-8 md:right-8"
         >
           <Github /> source code
         </a>

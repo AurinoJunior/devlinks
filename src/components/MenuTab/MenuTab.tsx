@@ -10,11 +10,14 @@ export function MenuTab({ data, onChangeTab }: IMenuTabProps) {
   const firstItemToFocus = data[0].id
 
   return (
-    <Tabs className="flex justify-center" defaultValue={firstItemToFocus}>
-      <TabsList className="bg-transparent">
+    <Tabs
+      className="flex justify-center overflow-x-auto whitespace-nowrap rounded-md"
+      defaultValue={firstItemToFocus}
+    >
+      <TabsList className="bg-gradient-to-r from-white to-slate-200">
         {data.map((category) => (
           <TabsTrigger
-            className="font-semibold bg-transparent data-[state='active']:bg-slate-200 mx-4"
+            className="font-semibold bg-transparent data-[state='active']:bg-white mx-4"
             key={category.id}
             value={category.id}
             onClick={() => onChangeTab(category)}
