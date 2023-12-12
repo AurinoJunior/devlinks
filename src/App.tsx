@@ -14,11 +14,18 @@ import { useState } from 'react'
 export function App() {
   const allData = getData()
   const [currentCategory, setCurrentCategory] = useState(allData[0])
+  const [query, setQuery] = useState('')
+
+  const filteredLinks = currentCategory.data.filter(
+    (item) =>
+      item.description.toLowerCase().includes(query.toLowerCase()) ||
+      item.name.toLowerCase().includes(query.toLowerCase()),
+  )
 
   return (
     <>
       <Header />
-      <SearchBar onChangeInput={setCurrentCategory} />
+      <SearchBar onChangeInput={setQuery} value={query} />
 
       <div className="w-full text-center mt-16">
         <h1 className="font-bold text-3xl">{currentCategory.title}</h1>
@@ -31,7 +38,7 @@ export function App() {
         <MenuTab data={allData} onChangeTab={setCurrentCategory} />
 
         <div className="mt-8 flex gap-4 flex-wrap justify-center">
-          {currentCategory.data.map((item) => (
+          {filteredLinks.map((item) => (
             <Card className="flex flex-col w-72" key={item.id}>
               <div className="w-72 h-60">
                 <img
