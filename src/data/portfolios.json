@@ -14,14 +14,14 @@
       {
         "id": "d565fbc7-f4b9-4fbc-bade-62a585140023",
         "name": "Zeno Rocha",
-        "image": "/image/zenorocha.png",
+        "image": "/images/zenorocha.png",
         "description": "Minimalista e elegante, ótimo uso de tons neutros",
         "link": "https://zenorocha.com/"
       },
       {
         "id": "14f0821d-32e0-415a-a890-dbee6f60592f",
         "name": "Cassie",
-        "image": "/image/cassie.png",
+        "image": "/images/cassie.png",
         "description": "Visualmente lindo com fontes divertidas e boa combinação de cores",
         "link": "https://www.cassie.codes/"
       }

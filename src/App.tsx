@@ -9,26 +9,29 @@ import {
 } from './components/ui/card'
 import { SearchBar } from './components/SearchBar/SearchBar'
 import { MenuTab } from './components/MenuTab/MenuTab'
+import { useState } from 'react'
 
 export function App() {
   const allData = getData()
-
-  const currentTab = allData[1]
+  const [currentCategory, setCurrentCategory] = useState(allData[0])
 
   return (
     <>
       <Header />
-      <SearchBar />
+      <SearchBar onChangeInput={setCurrentCategory} />
 
       <div className="w-full text-center mt-16">
-        <h1 className="font-semibold text-3xl">{currentTab.title}</h1>
-        <h2 className="mt-4 text-muted-foreground">{currentTab.subtitle}</h2>
+        <h1 className="font-bold text-3xl">{currentCategory.title}</h1>
+        <h2 className="mt-4 text-muted-foreground">
+          {currentCategory.subtitle}
+        </h2>
       </div>
 
       <main className="w-full px-40 my-16">
-        <MenuTab data={allData} />
-        <div className="flex gap-4 justify-start mt-8 flex-wrap">
-          {currentTab.data.map((item) => (
+        <MenuTab data={allData} onChangeTab={setCurrentCategory} />
+
+        <div className="mt-8 flex gap-4 flex-wrap justify-center">
+          {currentCategory.data.map((item) => (
             <Card className="flex flex-col w-72" key={item.id}>
               <div className="w-72 h-60">
                 <img
