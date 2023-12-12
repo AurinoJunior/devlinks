@@ -27,12 +27,12 @@ export function App() {
       <Header />
       <SearchBar onChangeInput={setQuery} value={query} />
 
-      <div className="w-full text-center mt-16">
+      <section className="w-full text-center mt-16">
         <h1 className="font-bold text-3xl">{currentCategory.title}</h1>
         <h2 className="mt-4 text-muted-foreground">
           {currentCategory.subtitle}
         </h2>
-      </div>
+      </section>
 
       <main className="w-full px-40 my-16">
         <MenuTab data={allData} onChangeTab={setCurrentCategory} />
@@ -40,9 +40,9 @@ export function App() {
         <div className="mt-8 flex gap-4 flex-wrap justify-center">
           {filteredLinks.map((item) => (
             <Card className="flex flex-col w-72" key={item.id}>
-              <div className="w-72 h-60">
+              <div className="w-full h-60">
                 <img
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full rounded-t-md"
                   src={item.image}
                   alt={item.name}
                 />
